@@ -11,3 +11,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+nav {
+  background-color: #703b09;
+}
+
+/* button {
+  background-color: #703b09;
+} */
+
+span {
+  max-width: 100%;
+}
+
+main {
+  width: -moz-fit-content;
+  max-height: 165px;
+  padding: 5px;
+  overflow-y: scroll;
+}
