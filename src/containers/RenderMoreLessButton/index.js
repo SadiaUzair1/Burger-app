@@ -29,10 +29,14 @@ export const RenderMoreLessButton = () => {
       {Array.from({ length: 4 }, (v, i) => (
         <div key={i}>
           <p className={'font-weight-bold'}>{type[i].toUpperCase()}</p>
-          <Button onClick={() => handleIncrement(type[i], 'inc')} className={'text-white m-2'}>
+          <Button
+            key={i}
+            onClick={() => handleIncrement(type[i], 'inc')}
+            className={'more text-white m-2'}
+          >
             More
           </Button>
-          <Button onClick={() => handleIncrement(type[i], 'dec')} className={'text-white m-2'}>
+          <Button onClick={() => handleIncrement(type[i], 'dec')} className={'less text-white m-2'}>
             Less
           </Button>
         </div>

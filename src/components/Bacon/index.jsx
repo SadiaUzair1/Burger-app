@@ -1,5 +1,5 @@
 export const Bacon = () => (
   <div>
-    <img src={'/images/bacon.png'} width={550} height={40} alt={''} />
+    <img data-test={'bacon'} src={'/images/bacon.png'} width={550} height={40} alt={''} />
   </div>
 )
