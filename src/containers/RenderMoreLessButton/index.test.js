@@ -36,7 +36,7 @@ describe('rendering components', () => {
   })
   it('right Button clicked', () => {
     const button = wrapper.find('Button.more')
-    console.log(wrapper)
+    // console.log(button.debug())
     // button.simulate('click')
     expect(button.exists()).toBe(true)
   })
