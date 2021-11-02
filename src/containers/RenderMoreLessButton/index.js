@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux'
 
-import Button from 'containers/RenderMoreLessButton/ButtonStyledComponent'
+import Button from 'containers/RenderMoreLessButton/style'
 import { handleChange } from 'helper'
 
 export const RenderMoreLessButton = () => {
@@ -16,20 +16,20 @@ export const RenderMoreLessButton = () => {
       {Array.from({ length: 4 }, (v, i) => (
         <div key={i}>
           <p className={'font-weight-bold'}>{type[i].toUpperCase()}</p>
-          <button
+          <Button
             data-test={i + '-more'}
             onClick={() => handleChange(type[i], 'inc', amountAndIngredient, dispatch)}
             className={'text-white m-2'}
           >
             More
-          </button>
-          <button
+          </Button>
+          <Button
             data-test={i + '-less'}
             onClick={() => handleChange(type[i], 'dec', amountAndIngredient, dispatch)}
             className={'text-white m-2'}
           >
             Less
-          </button>
+          </Button>
         </div>
       ))}
     </div>

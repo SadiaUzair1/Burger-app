@@ -33,47 +33,57 @@ describe('rendering components', () => {
     expect(wrapper.length).toBe(1)
   })
 
-  it('More Button of bacon should be clicked', async () => {
-    const button = findByTestAttr(wrapper, '1-more')
-    button.simulate('click')
-    expect(button.length).toBe(1)
-  })
-
-  it('Less Button of bacon should be clicked', async () => {
-    const button = findByTestAttr(wrapper, '1-less')
-    button.simulate('click')
-    expect(button.length).toBe(1)
-  })
   it('More Button of lettuce should be clicked', async () => {
-    const button = findByTestAttr(wrapper, '0-more')
+    const styledButton = findByTestAttr(wrapper, '0-more')
+    const button = styledButton.at(1)
     button.simulate('click')
     expect(button.length).toBe(1)
   })
 
   it('Less Button of lettuce should be clicked', async () => {
-    const button = findByTestAttr(wrapper, '0-less')
+    const styledButton = findByTestAttr(wrapper, '0-less')
+    const button = styledButton.at(1)
     button.simulate('click')
     expect(button.length).toBe(1)
   })
+
+  it('More Button of bacon should be clicked', async () => {
+    const styledButton = findByTestAttr(wrapper, '1-less')
+    const button = styledButton.at(1)
+    button.simulate('click')
+    expect(button.length).toBe(1)
+  })
+
+  it('Less Button of bacon should be clicked', async () => {
+    const styledButton = findByTestAttr(wrapper, '1-less')
+    const button = styledButton.at(1)
+    button.simulate('click')
+    expect(button.length).toBe(1)
+  })
+
   it('More Button of cheese should be clicked', async () => {
-    const button = findByTestAttr(wrapper, '2-more')
+    const styledButton = findByTestAttr(wrapper, '2-more')
+    const button = styledButton.at(1)
     button.simulate('click')
     expect(button.length).toBe(1)
   })
 
   it('Less Button of cheese should be clicked', async () => {
-    const button = findByTestAttr(wrapper, '2-less')
+    const styledButton = findByTestAttr(wrapper, '2-less')
+    const button = styledButton.at(1)
     button.simulate('click')
     expect(button.length).toBe(1)
   })
   it('More Button of meat should be clicked', async () => {
-    const button = findByTestAttr(wrapper, '3-more')
+    const styledButton = findByTestAttr(wrapper, '3-more')
+    const button = styledButton.at(1)
     button.simulate('click')
     expect(button.length).toBe(1)
   })
 
   it('Less Button of meat should be clicked', async () => {
-    const button = findByTestAttr(wrapper, '3-less')
+    const styledButton = findByTestAttr(wrapper, '3-less')
+    const button = styledButton.at(1)
     button.simulate('click')
     expect(button.length).toBe(1)
   })
