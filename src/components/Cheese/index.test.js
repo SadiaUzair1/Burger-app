@@ -12,4 +12,9 @@ describe('rendering components', () => {
     const wrapper = mount(<Cheese />)
     expect(wrapper.contains(<Cheese />))
   })
+
+  it('Cheese should be rendered', () => {
+    const wrapper = shallow(<Cheese />)
+    expect(wrapper).toMatchSnapshot()
+  })
 })

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering components bacon should be rendered 1`] = `
+<div>
+  <img
+    alt=""
+    data-test="bacon"
+    height={40}
+    src="/images/bacon.png"
+    width={550}
+  />
+</div>
+`;

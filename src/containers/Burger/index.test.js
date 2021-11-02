@@ -29,4 +29,8 @@ describe('rendering components', () => {
   it('Burger should render', () => {
     expect(wrapper.length).toBe(1)
   })
+
+  it('Burger should be rendered', () => {
+    expect(wrapper).toMatchSnapshot()
+  })
 })
