@@ -29,15 +29,15 @@ describe('rendering components', () => {
   it('rendeing component', () => {
     expect(wrapper.length).toBe(1)
   })
-  it('less Button clicked', () => {
-    const button = wrapper.find('Button.less')
-    // button.simulate('click')
-    expect(button).exist
-  })
-  it('right Button clicked', () => {
-    const button = wrapper.find('Button.more')
-    // console.log(button.debug())
-    // button.simulate('click')
-    expect(button.exists()).toBe(true)
-  })
+  // it('less Button clicked', () => {
+  //   const button = wrapper.find('Button.less')
+  //   // button.simulate('click')
+  //   expect(button).exist
+  // })
+  // it('right Button clicked', () => {
+  //   const button = wrapper.find('Button.more')
+  //   // console.log(button.debug())
+  //   // button.simulate('click')
+  //   expect(button.exists()).toBe(true)
+  // })
 })
