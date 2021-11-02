@@ -1,0 +1,249 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering components Burger should be rendered 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <App>
+    <div
+      className="App"
+    >
+      <NavBar>
+        <nav
+          className="navbar navbar-light"
+        >
+          <div
+            className="container-fluid"
+          >
+            <a
+              className="navbar-brand"
+              href="#"
+            >
+              <img
+                alt=""
+                className="align-text-top m-1"
+                height="40"
+                src="/images/burger.png"
+                width="50"
+              />
+            </a>
+          </div>
+        </nav>
+      </NavBar>
+      <div
+        className="container mt-5"
+      >
+        <Burger>
+          <div>
+            <div>
+              <img
+                alt=""
+                src="/images/upperbun.png"
+              />
+            </div>
+            <main
+              className="container fitting"
+            >
+              <BurgerIngredients>
+                <div>
+                  <div
+                    key="0"
+                  >
+                    <Lettuce>
+                      <div>
+                        <img
+                          alt=""
+                          height={50}
+                          margin={50}
+                          src="/images/lettuce.png"
+                          width={600}
+                        />
+                      </div>
+                    </Lettuce>
+                  </div>
+                  <div
+                    key="1"
+                  />
+                  <div
+                    key="2"
+                  />
+                  <div
+                    key="3"
+                  />
+                </div>
+              </BurgerIngredients>
+              <img
+                alt=""
+                src="/images/lowerbun.png"
+              />
+            </main>
+            <div
+              className="container btn btn-warning mt-5"
+            >
+              <RenderMoreLessButton>
+                <div>
+                  <p
+                    className="font-weight-bold"
+                  >
+                    Current Price: $
+                    3.50
+                  </p>
+                  <div
+                    key="0"
+                  >
+                    <p
+                      className="font-weight-bold"
+                    >
+                      LETTUCE
+                    </p>
+                    <styled.button
+                      className="text-white m-2"
+                      data-test="0-more"
+                      onClick={[Function]}
+                    >
+                      <button
+                        className="sc-bdvvtL hDJSsQ text-white m-2"
+                        data-test="0-more"
+                        onClick={[Function]}
+                      >
+                        More
+                      </button>
+                    </styled.button>
+                    <styled.button
+                      className="text-white m-2"
+                      data-test="0-less"
+                      onClick={[Function]}
+                    >
+                      <button
+                        className="sc-bdvvtL hDJSsQ text-white m-2"
+                        data-test="0-less"
+                        onClick={[Function]}
+                      >
+                        Less
+                      </button>
+                    </styled.button>
+                  </div>
+                  <div
+                    key="1"
+                  >
+                    <p
+                      className="font-weight-bold"
+                    >
+                      BACON
+                    </p>
+                    <styled.button
+                      className="text-white m-2"
+                      data-test="1-more"
+                      onClick={[Function]}
+                    >
+                      <button
+                        className="sc-bdvvtL hDJSsQ text-white m-2"
+                        data-test="1-more"
+                        onClick={[Function]}
+                      >
+                        More
+                      </button>
+                    </styled.button>
+                    <styled.button
+                      className="text-white m-2"
+                      data-test="1-less"
+                      onClick={[Function]}
+                    >
+                      <button
+                        className="sc-bdvvtL hDJSsQ text-white m-2"
+                        data-test="1-less"
+                        onClick={[Function]}
+                      >
+                        Less
+                      </button>
+                    </styled.button>
+                  </div>
+                  <div
+                    key="2"
+                  >
+                    <p
+                      className="font-weight-bold"
+                    >
+                      CHEESE
+                    </p>
+                    <styled.button
+                      className="text-white m-2"
+                      data-test="2-more"
+                      onClick={[Function]}
+                    >
+                      <button
+                        className="sc-bdvvtL hDJSsQ text-white m-2"
+                        data-test="2-more"
+                        onClick={[Function]}
+                      >
+                        More
+                      </button>
+                    </styled.button>
+                    <styled.button
+                      className="text-white m-2"
+                      data-test="2-less"
+                      onClick={[Function]}
+                    >
+                      <button
+                        className="sc-bdvvtL hDJSsQ text-white m-2"
+                        data-test="2-less"
+                        onClick={[Function]}
+                      >
+                        Less
+                      </button>
+                    </styled.button>
+                  </div>
+                  <div
+                    key="3"
+                  >
+                    <p
+                      className="font-weight-bold"
+                    >
+                      MEAT
+                    </p>
+                    <styled.button
+                      className="text-white m-2"
+                      data-test="3-more"
+                      onClick={[Function]}
+                    >
+                      <button
+                        className="sc-bdvvtL hDJSsQ text-white m-2"
+                        data-test="3-more"
+                        onClick={[Function]}
+                      >
+                        More
+                      </button>
+                    </styled.button>
+                    <styled.button
+                      className="text-white m-2"
+                      data-test="3-less"
+                      onClick={[Function]}
+                    >
+                      <button
+                        className="sc-bdvvtL hDJSsQ text-white m-2"
+                        data-test="3-less"
+                        onClick={[Function]}
+                      >
+                        Less
+                      </button>
+                    </styled.button>
+                  </div>
+                </div>
+              </RenderMoreLessButton>
+            </div>
+          </div>
+        </Burger>
+      </div>
+    </div>
+  </App>
+</Provider>
+`;
