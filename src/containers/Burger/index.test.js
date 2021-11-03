@@ -1,6 +1,6 @@
-import { mount } from 'enzyme'
 import { Burger } from 'containers'
 import configureStore from 'redux-mock-store'
+import { mount } from 'enzyme'
 import { Provider } from 'react-redux'
 
 let wrapper

@@ -1,5 +1,5 @@
-import { mount, shallow } from 'enzyme'
 import { Lettuce } from 'components'
+import { mount, shallow } from 'enzyme'
 
 describe('rendering components', () => {
   it('Lettuce is rendering alone', () => {

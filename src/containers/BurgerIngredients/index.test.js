@@ -1,6 +1,6 @@
-import { shallow } from 'enzyme'
 import { BurgerIngredients } from 'containers'
 import configureStore from 'redux-mock-store'
+import { shallow } from 'enzyme'
 import { Provider } from 'react-redux'
 
 let wrapper

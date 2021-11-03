@@ -1,6 +1,5 @@
-import { mount, shallow } from 'enzyme'
-
 import { Cheese } from 'components'
+import { mount, shallow } from 'enzyme'
 
 describe('rendering components', () => {
   it('Cheese is rendering alone', () => {
