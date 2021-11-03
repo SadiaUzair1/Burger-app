@@ -34,4 +34,8 @@ describe('rendering components', () => {
     const logo = findByTestAttr(component, 'bacon')
     expect(logo.length).toBe(1)
   })
+
+  it('bacon should be rendered', () => {
+    expect(component).toMatchSnapshot()
+  })
 })

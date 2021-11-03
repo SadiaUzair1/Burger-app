@@ -87,4 +87,8 @@ describe('rendering components', () => {
     button.simulate('click')
     expect(button.length).toBe(1)
   })
+
+  it('More Less buttons should render', () => {
+    expect(wrapper).toMatchSnapshot()
+  })
 })

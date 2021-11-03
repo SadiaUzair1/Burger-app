@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering components Cheese should be rendered 1`] = `
+<div>
+  <img
+    alt=""
+    height={50}
+    margin={50}
+    src="/images/lettuce.png"
+    width={600}
+  />
+</div>
+`;
