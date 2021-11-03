@@ -3,7 +3,7 @@ import { mount, shallow } from 'enzyme'
 
 import { findByTestAttr } from '../../../utlis'
 
-const setup = () => {
+const shallowWraper = () => {
   const wrapper = shallow(<Bacon />)
   return wrapper
 }
@@ -18,7 +18,7 @@ describe('rendering components', () => {
   let wrapper
 
   beforeEach(() => {
-    component = setup()
+    component = shallowWraper()
     wrapper = mounting()
   })
 

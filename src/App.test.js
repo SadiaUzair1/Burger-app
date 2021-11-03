@@ -1,7 +1,6 @@
-import { mount } from 'enzyme'
 import { App } from 'App'
-
 import configureStore from 'redux-mock-store'
+import { mount } from 'enzyme'
 import { Provider } from 'react-redux'
 
 let wrapper

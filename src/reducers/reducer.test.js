@@ -2,6 +2,7 @@ const { ingredientPriceReducer } = require('./ingredientReducer')
 const { initialIngredientPrice, ingredientPrices } = require('./initialState')
 
 let updatedState = initialIngredientPrice
+
 const setUp = (action, payload) => {
   const actualOutput = ingredientPriceReducer(initialIngredientPrice, {
     action: action,
