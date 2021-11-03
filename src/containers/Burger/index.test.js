@@ -1,11 +1,11 @@
-import { mount, shallow } from 'enzyme'
+import { shallow } from 'enzyme'
 import { Burger } from 'containers'
 import configureStore from 'redux-mock-store'
 import { Provider } from 'react-redux'
 
 let wrapper
-const alone = store =>
-  mount(
+const setup = store =>
+  shallow(
     <Provider store={store}>
       <Burger />
     </Provider>
@@ -21,18 +21,12 @@ describe('rendering components', () => {
     amount: 3.5
   }
 
-  // beforeEach(() => {
-  //   const store = mockStore(initialState)
-  //   wrapper = alone(store)
-  // })
+  beforeEach(() => {
+    const store = mockStore(initialState)
+    wrapper = setup(store)
+  })
 
-  // it('rendeing burger with children', () => {
-  //   console.log('wrapper', wrapper)
-  //   expect(wrapper.length).toEqual(1)
-  // })
-
-  it('Burger is rendering alone', () => {
-    const container = shallow(<Burger />)
-    expect(container.contains(<Burger />))
+  it('Burger should render', () => {
+    expect(wrapper.length).toBe(1)
   })
 })
